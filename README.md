@@ -245,19 +245,17 @@ If backend (Node.js / Supabase) is added:
 
 ---
 
-# 🎤 Interview Explanation
+# 🎤 Some Question Explanation
 
-If asked:
-
-"Why does data remain after refresh?"
+1."Why does data remain after refresh?"
 
 Answer:
 
 Because the application uses LocalStorage, which stores data inside the browser permanently until manually cleared.
 
-If asked:
 
-"Why accounts don’t sync across browsers?"
+
+2."Why accounts don’t sync across browsers?"
 
 Answer:
 
