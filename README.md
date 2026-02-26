@@ -1,0 +1,1 @@
+# HARkash Pay (Static)\n\nDeploy-friendly static version.\n

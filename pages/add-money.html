@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARkash Pay | Add Money</title>
+
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../app.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="app-shell">
+    <div class="app-phone bg-base-200">
+
+      <header class="app-header sticky top-0 z-10">
+        <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
+          <div class="flex items-center gap-2">
+            <img class="w-12" src="../assets/logo.png" alt="logo" onerror="this.style.display='none'">
+            <div>
+              <div class="text-lg font-extrabold">Add Money</div>
+              <div id="balance" class="text-sm muted">Balance: ৳0</div>
+            </div>
+          </div>
+
+          <a href="./home.html" class="btn btn-soft">
+            <i class="fa-solid fa-house"></i> Home
+          </a>
+        </section>
+      </header>
+
+      <main class="w-11/12 mx-auto py-7 space-y-4">
+        <div class="soft-section">
+          <div class="flex items-center gap-3 mb-4">
+            <img class="w-10" src="../assets/opt-1.png" alt="" onerror="this.style.display='none'">
+            <div>
+              <h2 class="text-xl font-bold">Add Money</h2>
+              <p class="text-sm muted">Select bank and add amount (Demo).</p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow rounded-3xl">
+            <div class="card-body">
+
+              <label class="label font-bold">Select Bank</label>
+              <select id="bank" class="select bg-base-200 w-full">
+                <option disabled selected>Select a Bank</option>
+              </select>
+
+              <label class="label font-bold mt-2">Amount to Add</label>
+              <input id="amount" type="number" class="input bg-base-200 w-full" placeholder="Enter amount" />
+
+              <label class="label font-bold mt-2">6 Digit PIN</label>
+              <input id="pin" type="password" maxlength="6" class="input bg-base-200 w-full"
+                placeholder="Enter 6 digit pin" inputmode="numeric" />
+
+              <button id="btnAdd" class="btn btn-primary rounded-full w-full mt-4">
+                <i class="fa-solid fa-plus"></i> Add Money
+              </button>
+
+              <p class="text-sm muted mt-2">Note: Initial balance is 0. This is a demo wallet.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+      <footer class="mt-auto">
+        <div class="w-11/12 mx-auto pb-6">
+          <div class="rounded-2xl bg-base-100 border border-base-300 px-4 py-4 text-center">
+            <p class="text-sm font-semibold">
+              © <span id="year"></span> HARkash Pay — Built by Hafizur Rahman
+            </p>
+
+
+            <a class="link link-hover text-sm font-semibold mt-2 inline-block"
+              href="https://github.com/Hafizur-Rahman-SD" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> github.com/Hafizur-Rahman-SD
+            </a>
+          </div>
+        </div>
+
+        <script>
+          const y = document.getElementById("year");
+          if (y) y.textContent = new Date().getFullYear();
+        </script>
+      </footer>
+
+      <script type="module" src="../js/pages/addMoneyPage.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>

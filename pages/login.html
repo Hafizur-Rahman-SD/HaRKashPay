@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HARkash Pay | Login</title>
+
+  <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="../app.css">
+
+  <!-- daisy + tailwind browser -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="app-shell">
+    <div class="app-phone bg-base-200">
+
+      <main class="w-11/12 mx-auto min-h-screen flex flex-col justify-center py-10">
+
+        <!-- Brand -->
+        <section class="text-center mb-8">
+          <div class="flex items-center justify-center gap-3">
+            <img class="w-14" src="../assets/logo.png" alt="logo"
+              onerror="this.style.display='none'">
+            <h1 class="text-3xl font-extrabold tracking-wide">HARkash Pay</h1>
+          </div>
+          <p class="muted mt-2">Fast • Simple • Secure (Demo Wallet)</p>
+        </section>
+
+        <!-- Card -->
+        <section class="card bg-base-100 shadow rounded-3xl">
+          <div class="card-body">
+
+            <label class="label font-bold">Mobile Number</label>
+            <input id="mobile" maxlength="11" minlength="11"
+              class="input bg-base-200 w-full"
+              placeholder="Enter 11 digit number" inputmode="numeric" />
+
+            <label class="label font-bold mt-3">6 Digit PIN</label>
+            <input id="pin" maxlength="6" minlength="6" type="password"
+              class="input bg-base-200 w-full"
+              placeholder="Enter 6 digit pin" inputmode="numeric" />
+
+            <button id="btnLogin" class="btn btn-primary rounded-full mt-5 w-full">
+              <i class="fa-solid fa-right-to-bracket"></i> Login
+            </button>
+
+            <button id="btnRegister" class="btn btn-soft rounded-full mt-2 w-full">
+              Create New Account (Demo)
+            </button>
+
+            <div class="mt-4 p-3 rounded-2xl bg-base-200">
+              <p class="text-sm muted">
+                Tip: 11 digit number + 6 digit PIN required. Demo data stays in this browser.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+      </main>
+      <footer class="mt-auto">
+        <div class="w-11/12 mx-auto pb-6">
+          <div class="rounded-2xl bg-base-100 border border-base-300 px-4 py-4 text-center">
+            <p class="text-sm font-semibold">
+              © <span id="year"></span> HARkash Pay — Built by Hafizur Rahman
+            </p>
+
+
+            <a class="link link-hover text-sm font-semibold mt-2 inline-block"
+              href="https://github.com/Hafizur-Rahman-SD" target="_blank" rel="noopener">
+              <i class="fa-brands fa-github"></i> github.com/Hafizur-Rahman-SD
+            </a>
+          </div>
+        </div>
+
+        <script>
+          const y = document.getElementById("year");
+          if (y) y.textContent = new Date().getFullYear();
+        </script>
+      </footer>
+
+      <script type="module" src="../js/pages/loginPage.js"></script>
+    </div>
+  </div>
+</body>
+
+</html>
