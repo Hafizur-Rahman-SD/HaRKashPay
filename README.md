@@ -14,9 +14,10 @@ This project simulates a real mobile financial service experience without using 
 
 # 🌐 Live Demo
 
-Live Link: (Add your Vercel link here)
+Live Link: ha-r-kash-pay.vercel.app
 
-GitHub Repository:  
+GitHub Repository: 
+https://github.com/Hafizur-Rahman-SD/HaRKashPay
 https://github.com/Hafizur-Rahman-SD
 
 ---
@@ -166,9 +167,12 @@ Total deduction = Amount + Charge
 ---
 
 # 🏗 Architecture Structure
-
-
-
+pages/ → All HTML pages
+js/ → Core JavaScript logic
+js/pages/ → Page-specific scripts
+assets/ → Images and icons
+app.css → Global styling
+index.html → Redirect entry
 
 
 ---
