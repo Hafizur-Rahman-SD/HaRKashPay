@@ -14,10 +14,19 @@ This project simulates a real mobile financial service experience without using 
 
 # 🌐 Live Demo
 
-Live Link: ha-r-kash-pay.vercel.app
+🔗 **Primary Live Link:**  
+https://ha-r-kash-pay.vercel.app
 
-GitHub Repository: 
+🔗 **Preview Deployment Link:**  
+https://ha-r-kash-e8uotvi3h-hafizur-rahmans-projects-b1a7a72d.vercel.app
+
+
+# 📂 GitHub Repository
+
+🔗 **Project Repository:**  
 https://github.com/Hafizur-Rahman-SD/HaRKashPay
+
+🔗 **GitHub Profile:**  
 https://github.com/Hafizur-Rahman-SD
 
 ---
